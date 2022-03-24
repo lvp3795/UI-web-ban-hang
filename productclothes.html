@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Product</title>
+    <script type="text/javascript" src="file/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/392b7ecd7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="file/style3.css" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <a href="home.html"><h3 class="logo1 cursor">ONLINE SHOP</h3></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+            <ul>
+                <li><a href="productclothes.html">CLOTHES</a></li>
+                <li><a href="producthomeliving.html">HOME LIVING</a></li>
+                <li><a href="productbeauty.html">BEAUTY</a></li>
+                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-lable cursor">
+            <span></span>
+        </label>
+        <div class="row" style="height:30px;background:#ffffff;display:inline-block"></div>
+    </header>
+
+    <div class="page-section masthead2">
+        <div class="container h-50">
+            <h1 class="section-header text-white font-weight-bold">Products</h1>
+            <p class="main-menu text-white-75 font-weight-light mb-5"><a class="link-menu" href="home.html">Online shop > <span style="color:white;">Products > </span><span style="color:white;">Clothes </span></a></p>
+
+        </div>
+
+    </div>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 blog-form">
+
+
+                    <h2 class="blog-sidebar-title"><b>Categories</b></h2>
+                    <hr />
+                    <p><a href="productall.html" class="blog-sidebar-list cursor"><b><span class="list-icon"> > </span> All</b></a></p>
+                    <p><a href="productclothes.html" class="blog-sidebar-list cursor"><b><span class="list-icon"> > </span> Clothes</b></a></p>
+                    <p><a href="producthomeliving.html" class="blog-sidebar-list cursor"><b><span class="list-icon"> > </span> Home Living</b></a></p>
+                    <p><a href="productbeauty.html" class="blog-sidebar-list cursor"><b><span class="list-icon"> > </span> Beauty</b></a></p>
+
+
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+
+                    <h2 class="blog-sidebar-title"><b>Filter</b></h2>
+                    <hr />
+
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Receipient's username" aria-describely="basic-addon2">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2"><i class="fa fa-search cursor"></i></span>
+                        </div>
+
+                    </div>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="150" value="50" class="slider" id="myRange">
+                        <p>Price:<span>$ </span><span id="demo"></span></p>
+                    </div>
+                    <button type="button" class="btn btn-dark btn-lg">Submit</button>
+
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+                    <h2 class="blog-sidebar-title"><b>Tags</b></h2>
+                    <p class="product-sidebar-list cursor">
+                        <b>#t-shirt, #jacket,</b>
+                        <b>#clock, #mirror, #shampoo,</b>
+                        <b>#short, #sock</b>
+                    </p>
+
+
+                </div>
+                <!--END  <div class="col-lg-3 blog-form">-->
+
+                <div class="col-lg-9" style="padding-left: 30px;">
+                    <div class="row">
+
+
+                        <div class="col-lg-4">
+                            <select class="form-control">
+                                <option value="">Default Sorting</option>
+                                <option value="popularity">Sorting by popularity</option>
+                                <option value="average">Sorting by average</option>
+                                <option value="latest">Sorting by latest</option>
+                                <option value="low">Sorting by low</option>
+                                <option value="high">Sorting by high</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <!-- Sorting by <div class="row"> -->
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="images/25.jpg" class="product-image">
+                                    <a href="productdetail.html" class="cursor" style="text-decoration:none"><h5 class="card-title"><b>ROADSTER</b></h5></a>
+                                    <p class="card-text small">Women Black Skinny Fit Mid-Rise Clean Look Stretchable Jeans</p>
+                                    <p class="tags">$1</p>
+                                    <a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="images/26.jpg" class="product-image">
+                                    <h5 class="card-title"><b>HIGHLANDER</b></h5>
+                                    <p class="card-text small">Men Black Slim Fit Mid-Rise Clean Look Stretchable Cropped Jeans</p>
+                                    <p class="tags">$2</p>
+                                    <a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="images/27.jpg" class="product-image">
+                                    <h5 class="card-title"><b>BELLA MODA </b></h5>
+                                    <p class="card-text small">Girls Dark Green & Black Net Sequinned Tulle Fit & Flare Dress</p>
+                                    <p class="tags">$3</p>
+                                    <a href="#" class="btn btn-success button-text"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Sorting by <div class="row"> -->
+
+                    <div>&nbsp;</div>
+                    <div>&nbsp;</div>
+
+                   
+                    <!-- Sorting by <div class="row"> -->
+
+
+
+                </div>
+                <!--END  <div class="col-lg-9">-->
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="nav_container1 d-flex flex-sm-row flex-column align-items-center justify-content-md-start justify-content-center text-center">
+                        <ul class="footer_nav">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms Of Use</a></li>
+                            <li><a href="#">Site Map</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer_social d-flex flex-row align-items-center justify-content-md-end justify-content-center">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value ;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="file/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/392b7ecd7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="file/style5.css" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('input:radio[id="bc2"]').click(function () {
+                if ($(this).is(":checked")) {
+                    $("#cardnumber").hide();
+                    $("#cvv").hide();
+                    $("#exp").hide();
+                }
+            });
+            $('input:radio[id="bc1"]').click(function () {
+                if ($(this).is(":checked")) {
+                    $("#cardnumber").show();
+                    $("#cvv").show();
+                    $("#exp").show();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Payment Form</h2>
+        <form action="" method="POST">
+            <h4>Customer Details</h4>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" placeholder="Full Name" required class="name" />
+                    <i class="fa fa-user icon" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="email" placeholder="Email Address" required class="name" />
+                    <i class="fa fa-envelope icon"></i>
+                </div>
+            </div>
+            <div class="input_group">
+                <div class="input_box">
+                    <input type="text" placeholder="Address" required class="name" />
+                    <i class="fa fa-map-marker icon" aria-hidden="true"></i>
+                </div>
+            </div>
+           
+
+            <div class="input_group">
+                <div class="input_box">
+                    <h4>Date of Birth</h4>
+                    <input type="text" placeholder="DD/MM/YY" required class="dob" />
+                    
+
+                </div>
+                <div class="input_box">
+                    <h4>Gender</h4>
+                    <input type="radio" class="radio" name="gender" required id="b1" checked/>
+                    <label class="cursor" for="b1">Male</label>
+                    <input type="radio" class="radio" name="gender" required id="b2" />
+                    <label class="cursor" for="b2">Female</label>
+                </div>
+            </div>
+
+            <div class="input_group">
+                <div class="input_box">
+                    <h4>Payment Details</h4>
+                    <input type="radio" name="pay" class="radio" id="bc1" checked />
+                    <label class="cursor" for="bc1">
+                        <span ><i class="fa fa-cc-visa"></i>Credit Card</span>
+                    </label>
+                    <input type="radio" name="pay" class="radio" id="bc2" />
+                    <label class="cursor" for="bc2">
+                        <span ><i class="fa fa-cc-paypal"></i>Paypal</span>
+                    </label>
+                </div>
+            </div>
+                    <div class="input_group" id="cardnumber">
+                        <div class="input_box" >
+                            <input type="tel" class="name"  placeholder="Card Number" required />
+                            <i class="fa fa-credit-card icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group" id="cvv">
+                        <div class="input_box" >
+                            <input type="tel" class="name"  placeholder="CVV" required />
+                            <i class="fa fa-credit-card icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group" id="exp">
+                        <div class="input_box" >
+                            <input type="number" class="name"  placeholder="Expire MM/YY" required />
+                            <i class="fa fa-calendar icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <input type="number" class="name" placeholder="Amount: $0.5" readonly  />
+                            <i class="fa fa-money icon"></i>
+                        </div>
+                    </div>
+                    <div class="input_group">
+                        <div class="input_box">
+                            <button type="submit">Pay Now</button>
+                        </div>
+                    </div>
+                
+           
+        </form>
+    </div>
+</body>
+</html>

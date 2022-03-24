@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <script type="text/javascript" src="file/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/392b7ecd7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="file/style.css" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="file/JavaScript2.js"></script>
+    <style>
+        html, body {
+            display: grid;
+            height: 100%;
+            width: 100%;
+            place-items: center;
+            background:#808080;
+            
+        }
+        header{
+            position:absolute;
+            top:0;
+        }
+        @media (max-width:1300px) {
+            header{
+                display:none;
+            }
+            .wrapper{
+                margin-top:0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home.html"><h3 class="logo1 cursor">ONLINE SHOP</h3></a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <nav>
+            <ul>
+                <li><a href="productclothes.html">CLOTHES</a></li>
+                <li><a href="producthomeliving.html">HOME LIVING</a></li>
+                <li><a href="productbeauty.html">BEAUTY</a></li>
+                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                <li><a href="login.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-lable cursor">
+            <span></span>
+        </label>
+        <div class="row" style="height:30px;background:#ffffff;display:inline-block"></div>
+    </header>
+
+    <div class="wrapper">
+        <div class="title-text">
+            <div class="title-login login">Login form</div>
+            <div class="title-login signup">Signup form</div>
+        </div>
+        
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slider" id="login" checked />
+                <input type="radio" name="slider" id="signup" />
+                <label for="login" class="slide login">Login</label>
+                <label for="signup" class="slide signup">Signup</label>
+                <div class="slide-tab"></div>
+            </div>
+            <div class="form-inner">
+                <form action="#" class="login">
+                    <div class="field">
+                        <input type="text" placeholder="Email Address" required />
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Password" required />
+                    </div>
+                    <div class="pass-link"><a href="#">Forgot Password?</a></div>
+                    <div class="field">
+                        <input type="submit" value="Login" />
+                    </div>
+                    <div class="signup-link">Not a member? <a class="cursor">Signup now</a></div>
+                </form>
+                <form action="#" class="signup">
+                    <div class="field">
+                        <input type="text" placeholder="Email Address" required />
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Password" required />
+                    </div>
+                    <div class="field">
+                        <input type="password" placeholder="Confirm password" required />
+                    </div>
+
+                    <div class="field">
+                        <input type="submit" value="Signup" />
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
